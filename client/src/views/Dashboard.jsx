@@ -160,6 +160,7 @@ class Dashboard extends React.Component {
               </Card>
             </Col>
           </Row>
+
           <Row>
             <Col lg="4">
               <Card className="card-chart">
@@ -183,6 +184,24 @@ class Dashboard extends React.Component {
             <Col lg="4">
               <Card className="card-chart">
                 <CardHeader>
+                  <h5 className="card-category">Completed Tasks</h5>
+                  <CardTitle tag="h3">
+                    <i className="tim-icons icon-send text-success" /> 12,100K
+                  </CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <div className="chart-area">
+                    <Line
+                      data={chartExample4.data}
+                      options={chartExample4.options}
+                    />
+                  </div>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col lg="4">
+              <Card className="card-chart">
+                <CardHeader>
                   <h5 className="card-category">Daily Sales</h5>
                   <CardTitle tag="h3">
                     <i className="tim-icons icon-delivery-fast text-primary" />{" "}
@@ -194,24 +213,6 @@ class Dashboard extends React.Component {
                     <Bar
                       data={chartExample3.data}
                       options={chartExample3.options}
-                    />
-                  </div>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col lg="4">
-              <Card className="card-chart">
-                <CardHeader>
-                  <h5 className="card-category">Completed Tasks</h5>
-                  <CardTitle tag="h3">
-                    <i className="tim-icons icon-send text-success" /> 12,100K
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <div className="chart-area">
-                    <Line
-                      data={chartExample4.data}
-                      options={chartExample4.options}
                     />
                   </div>
                 </CardBody>
