@@ -1,14 +1,14 @@
-import Dashboard from "views/Dashboard.jsx";
-import Icons from "views/Icons.jsx";
-import Map from "views/Map.jsx";
-import Notifications from "views/Notifications.jsx";
-import TableList from "views/TableList.jsx";
-import Typography from "views/Typography.jsx";
-import UserProfile from "views/UserProfile.jsx";
+import Dashboard from "./views/Dashboard.jsx";
+import Icons from "./views/Icons.jsx";
+import Map from "./views/Map.jsx";
+import Notifications from "./views/Notifications.jsx";
+import TableList from "./views/TableList.jsx";
+import Typography from "./views/Typography.jsx";
+import UserProfile from "./views/UserProfile.jsx";
 
 var routes = [
   {
-    path: "/",
+    path: "/dashboard",
     name: "Dashboard",
     icon: "tim-icons icon-chart-pie-36",
     component: Dashboard,

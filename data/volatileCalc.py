@@ -13,6 +13,7 @@ for i in range(2, len(df)):
 
 
 volatileNum = total/(len(df))
+print("volatile", volatileNum)
 savedMoney = timesFilled * tankSize * volatileNum
 
-print(savedMoney)
+print("savedMoney", savedMoney)
