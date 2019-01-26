@@ -24,11 +24,24 @@ import {
   chartExample4
 } from "../variables/charts.jsx";
 
+import Papa from 'papaparse';
+import axios from 'axios';
+
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bigChartData: "data1"
+      bigChartData: "data1",
+      gasPrice: {},
+      gasPriceWt2: [],
+      gasPriceWt3: [],
+      gasPriceWt4: [], 
+      gasPriceMt2: [],
+      gasPriceMt3: [], 
+      gasPriceMt4: [],
+      gasPriceAt2: [], 
+      gasPriceAt3: [], 
+      gasPriceAt4: [],
     };
   }
   setBgChartData = name => {
@@ -36,6 +49,17 @@ class Dashboard extends React.Component {
       bigChartData: name
     });
   };
+  componentDidMount() {
+    axios.get(`https://raw.githubusercontent.com/plebeiathon/gasLEEK/master/data/cvs/PET_PRI_GND_A_EPM0_PTE_DPGAL_W/Data%202-Table%201.csv`)
+      .then(res => {
+        const gasPriceWt2 = Papa.parse(res.data, {
+          delimiter: ',',
+          header: true
+        });
+
+        this.setState({ gasPriceWt2 });
+      });
+  }
   render() {
     return (
       <>

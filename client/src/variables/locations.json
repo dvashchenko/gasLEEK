@@ -1,0 +1,218 @@
+[
+  {
+    "label": "California",
+    "coordinates": [
+      -119.417931,
+      36.778259
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Colorado",
+    "coordinates": [
+      -105.358887,
+      39.113014
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Florida",
+    "coordinates": [
+      -81.760254,
+      27.994402	
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Massachusetts",
+    "coordinates": [
+      -71.382439,
+      42.407211
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Minnesota",
+    "coordinates": [
+      -94.636230,
+      46.392410
+    ],
+    "weight": 1
+  },
+  {
+    "label": "New York",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Ohio",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Texas",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Washington",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Boston",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Chicago",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Cleveland",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Denver",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Houston",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Los Angeles",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Miami",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "New York City",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "San Francisco",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Seattle",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "New England",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Central Atlantic",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Lower Atlantic",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Midwest",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Gulf Coast",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "Rocky Mountain",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "West Coast",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+  {
+    "label": "East Coast",
+    "coordinates": [
+        -73.9864,
+        40.73097
+    ],
+    "weight": 1
+  },
+]
