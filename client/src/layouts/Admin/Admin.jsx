@@ -11,7 +11,7 @@ import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
 
 import routes from "routes.js";
 
-import logo from "assets/img/react-logo.png";
+import logo from "assets/img/gasLEEK.png";
 
 var ps;
 
@@ -62,7 +62,7 @@ class Admin extends React.Component {
   };
   getRoutes = routes => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/gasLEEK") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -99,8 +99,8 @@ class Admin extends React.Component {
             routes={routes}
             bgColor={this.state.backgroundColor}
             logo={{
-              outterLink: "https://www.creative-tim.com/",
-              text: "Creative Tim",
+              outterLink: "/gasLEEK",
+              text: "gasLEEK",
               imgSrc: logo
             }}
             toggleSidebar={this.toggleSidebar}
