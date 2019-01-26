@@ -7,7 +7,7 @@ import PerfectScrollbar from "perfect-scrollbar";
 import AdminNavbar from "../../components/Navbars/AdminNavbar";
 import Footer from "../../components/Footer/Footer";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import FixedPlugin from "../../components/FixedPlugin/FixedPlugin";
+// import FixedPlugin from "../../components/FixedPlugin/FixedPlugin";
 
 import routes from "../../routes";
 
@@ -123,10 +123,6 @@ class Admin extends React.Component {
             )}
           </div>
         </div>
-        <FixedPlugin
-          bgColor={this.state.backgroundColor}
-          handleBgClick={this.handleBgClick}
-        />
       </>
     );
   }
