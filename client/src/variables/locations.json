@@ -42,177 +42,129 @@
   {
     "label": "New York",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -73.935242,
+      40.730610	
     ],
     "weight": 1
   },
   {
     "label": "Ohio",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -82.996216,
+      40.367474
     ],
     "weight": 1
   },
   {
     "label": "Texas",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -99.707316,
+      31.124539
     ],
     "weight": 1
   },
   {
     "label": "Washington",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -120.740135,
+      47.751076
     ],
     "weight": 1
   },
   {
     "label": "Boston",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -71.057083,
+      42.361145	
     ],
     "weight": 1
   },
   {
     "label": "Chicago",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -87.623177,
+      41.881832	
     ],
     "weight": 1
   },
   {
     "label": "Cleveland",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -81.681290,
+      41.505493	
     ],
     "weight": 1
   },
   {
     "label": "Denver",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -104.991531,
+      39.742043
     ],
     "weight": 1
   },
   {
     "label": "Houston",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -95.452065,
+      29.765205
     ],
     "weight": 1
   },
   {
     "label": "Los Angeles",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -118.243683,
+      34.052235
     ],
     "weight": 1
   },
   {
     "label": "Miami",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -80.191788,
+      25.761681
     ],
     "weight": 1
   },
   {
     "label": "New York City",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -73.935242,
+      40.730610
     ],
     "weight": 1
   },
   {
     "label": "San Francisco",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -122.446747,
+      37.733795	
     ],
     "weight": 1
   },
   {
     "label": "Seattle",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -122.335167,
+      47.608013
     ],
     "weight": 1
   },
   {
     "label": "New England",
     "coordinates": [
-        -73.9864,
-        40.73097
-    ],
-    "weight": 1
-  },
-  {
-    "label": "Central Atlantic",
-    "coordinates": [
-        -73.9864,
-        40.73097
-    ],
-    "weight": 1
-  },
-  {
-    "label": "Lower Atlantic",
-    "coordinates": [
-        -73.9864,
-        40.73097
-    ],
-    "weight": 1
-  },
-  {
-    "label": "Midwest",
-    "coordinates": [
-        -73.9864,
-        40.73097
-    ],
-    "weight": 1
-  },
-  {
-    "label": "Gulf Coast",
-    "coordinates": [
-        -73.9864,
-        40.73097
+      -0.123446,
+      51.538038
     ],
     "weight": 1
   },
   {
     "label": "Rocky Mountain",
     "coordinates": [
-        -73.9864,
-        40.73097
+      -109.261588,
+      45.623225
     ],
     "weight": 1
-  },
-  {
-    "label": "West Coast",
-    "coordinates": [
-        -73.9864,
-        40.73097
-    ],
-    "weight": 1
-  },
-  {
-    "label": "East Coast",
-    "coordinates": [
-        -73.9864,
-        40.73097
-    ],
-    "weight": 1
-  },
+  }
 ]
