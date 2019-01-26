@@ -2,9 +2,11 @@
 // // // Chart variables
 // #############################
 
+import Papa from 'papaparse';
+
 let jsonData = Papa.parse('../../../data/cvs/PET_PRI_GND_A_EPM0_PTE_DPGAL_W/Data 2-Table 1.csv', {
   header: true,
-})
+});
 
 
 // chartExample1 and chartExample2 options
