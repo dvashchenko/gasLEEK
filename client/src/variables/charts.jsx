@@ -261,8 +261,8 @@ let chartExample2 = {
             3.142,
             3.121,
             3.11,
-            3.08,
-            3.09
+            3.105,
+            3.102
           ]
         }
       ]
@@ -285,7 +285,7 @@ let chartExample3 = {
     gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
 
     return {
-      labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
+      labels: ["0%", "2.5%", "5%", "7.5%", "10%"],
       datasets: [
         {
           label: "Countries",
@@ -296,7 +296,7 @@ let chartExample3 = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45]
+          data: [(0 * 3500000 * 200), (.025 * 3500000 * 200), (.05 * 3500000 * 200), (.075 * 3500000 * 200), (.1 * 3500000 * 200)]
         }
       ]
     };
@@ -364,7 +364,7 @@ const chartExample4 = {
     gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
 
     return {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
+      labels: ["Jan 28, 2019", "Feb 4, 2019", "Feb 11, 2019", "Feb 18, 2019", "Feb 25, 2019", "Mar 4, 2019"],
       datasets: [
         {
           label: "My First dataset",
@@ -381,7 +381,12 @@ const chartExample4 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [90, 27, 60, 12, 80]
+          data: [12.3,
+            24.6,
+            30.9,
+            34.2,
+            35.7,
+            36.6]
         }
       ]
     };
@@ -413,8 +418,8 @@ const chartExample4 = {
             zeroLineColor: "transparent"
           },
           ticks: {
-            suggestedMin: 50,
-            suggestedMax: 125,
+            suggestedMin: 0,
+            suggestedMax: 40,
             padding: 20,
             fontColor: "#9e9e9e"
           }

@@ -165,7 +165,7 @@ class Dashboard extends React.Component {
             <Col lg="4">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">California</h5>
+                  <h5 className="card-category">6 Week Persistence Forecast</h5>
                   <CardTitle tag="h3">
                     <i className="tim-icons icon-bell-55 text-info" />{" "}
                     Projected Gas Prices
@@ -184,9 +184,9 @@ class Dashboard extends React.Component {
             <Col lg="4">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Completed Tasks</h5>
+                  <h5 className="card-category">300 Gallons Per Truck</h5>
                   <CardTitle tag="h3">
-                    <i className="tim-icons icon-send text-success" /> 12,100K
+                    <i className="tim-icons icon-send text-success" /> Projected Refueling Savings
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -202,10 +202,10 @@ class Dashboard extends React.Component {
             <Col lg="4">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Daily Sales</h5>
+                  <h5 className="card-category">3,500,000 Truckers Refilling 130 Times a Year </h5>
                   <CardTitle tag="h3">
                     <i className="tim-icons icon-delivery-fast text-primary" />{" "}
-                    3,500€
+                    US Annual Savings
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
