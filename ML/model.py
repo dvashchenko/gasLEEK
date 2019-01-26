@@ -156,11 +156,11 @@ def fit_lstm(train, batch_size, nb_epoch, neurons):
     return model
 
 
-def forecast(model, batch_size, row):
-    X = row[0:-1]
-    X = X.reshape(1, 1, len(X))
-    yhat = model.predict(X, batch_size=batch_size)
-    return yhat[0, 0]
+# make a one-step forecast
+def forecast_lstm(model, batch_size, X):
+	X = X.reshape(1, 1, len(X))
+	yhat = model.predict(X, batch_size=batch_size)
+	return yhat[0,0]
 
 
 series = read_csv(path, header=0, parse_dates=[0], index_col=0, squeeze=True)
@@ -179,7 +179,7 @@ train, test = supervised_values[0:-12], supervised_values[-12:]
 scaler, train_scaled, test_scaled = scale(train, test)
 
 # fit the model
-lstm_model = fit_lstm(train_scaled, 1, 3000, 4)
+lstm_model = fit_lstm(train_scaled, 1, 500, 4)
 # forecast the entire training dataset to build up state for forecasting
 train_reshaped = train_scaled[:, 0].reshape(len(train_scaled), 1, 1)
 lstm_model.predict(train_reshaped, batch_size=1)
@@ -197,12 +197,12 @@ for i in range(len(test_scaled)):
 	# store forecast
 	predictions.append(yhat)
 	expected = raw_values[len(train) + i + 1]
-	print('Month=%d, Predicted=%f, Expected=%f' % (i+1, yhat, expected))
+	print('Week=%d, Predicted=%f, Expected=%f' % (i+1, yhat, expected))
 
 # report performance
 rmse = sqrt(mean_squared_error(raw_values[-12:], predictions))
 print('Test RMSE: %.3f' % rmse)
 # line plot of observed vs predicted
-pyplot.plot(raw_values[-12:])
-pyplot.plot(predictions)
-pyplot.show()
+plt.plot(raw_values[-12:])
+plt.plot(predictions)
+plt.show()
