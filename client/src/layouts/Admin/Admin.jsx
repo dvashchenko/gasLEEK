@@ -62,7 +62,7 @@ class Admin extends React.Component {
   };
   getRoutes = routes => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/gasLEEK") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -99,7 +99,7 @@ class Admin extends React.Component {
             routes={routes}
             bgColor={this.state.backgroundColor}
             logo={{
-              outterLink: "https://www.creative-tim.com/",
+              outterLink: "/gasLEEK",
               text: "gasLEEK",
               imgSrc: logo
             }}
