@@ -25,17 +25,24 @@ values = data.values
 X = data['Date']  # input
 y = data['Price']  # output
 
-data.plot()
-plt.show()
+print(values)
 
-# print(X)
-# print(y)
+# data.plot()
+# plt.show()
 
-# split into train and test sets
-# train_size = int(len(data) * 0.67)
-# test_size = len(data) - train_size
-# train, test = data[0:train_size,:], data[train_size:len(data),:]
-# print(len(train), len(test))
+# convert time series into supervised learning 
+# split data into train and test
+X = data.values
+train, test = X[0:-12], X[-12:]
+print(train)
+print(test)
+
+# walk-forward validation
+history = [x for x in train]
+predictions = list()
+for i in range(len(test)):
+	# make prediction...
+
 
 
 # model build
