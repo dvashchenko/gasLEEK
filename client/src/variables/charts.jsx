@@ -240,7 +240,7 @@ let chartExample2 = {
     gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
 
     return {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+      labels: ["Jan 28, 2019", "Feb 4, 2019", "Feb 11, 2019", "Feb 18, 2019", "Feb 25, 2019", "Mar 4, 2019"],
       datasets: [
         {
           label: "Data",
@@ -257,7 +257,13 @@ let chartExample2 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 100, 70, 80, 120, 80]
+          data: [3.183,
+            3.142,
+            3.121,
+            3.11,
+            3.08,
+            3.09
+          ]
         }
       ]
     };
