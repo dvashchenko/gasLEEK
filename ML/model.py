@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 np.random.seed(7)
 # data processing
 # all grades all formulations
-path = "/Volumes/X/GitHub/gasLEEK/data/cvs/PET_PRI_GND_A_EPM0_PTE_DPGAL_W/Data 1-Table 1.csv"
+path = "../data/cvs/PET_PRI_GND_A_EPM0_PTE_DPGAL_W/Data 1-Table 1.csv"
 # skipping empty data and reading into pandas dataframe
 data = pd.read_csv(path)
 columns = data.columns
