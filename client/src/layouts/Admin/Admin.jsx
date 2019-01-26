@@ -11,7 +11,7 @@ import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
 
 import routes from "routes.js";
 
-import logo from "assets/img/react-logo.png";
+import logo from "assets/img/gasLEEK.png";
 
 var ps;
 
@@ -100,7 +100,7 @@ class Admin extends React.Component {
             bgColor={this.state.backgroundColor}
             logo={{
               outterLink: "https://www.creative-tim.com/",
-              text: "Creative Tim",
+              text: "gasLEEK",
               imgSrc: logo
             }}
             toggleSidebar={this.toggleSidebar}
