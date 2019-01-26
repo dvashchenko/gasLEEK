@@ -27,8 +27,8 @@ y = data['Price']  # output
 
 print(values)
 
-# data.plot()
-# plt.show()
+data.plot()
+plt.show()
 
 # convert time series into supervised learning 
 # split data into train and test
@@ -40,7 +40,7 @@ print(test)
 # walk-forward validation
 history = [x for x in train]
 predictions = list()
-for i in range(len(test)):
+#for i in range(len(test)):
 	# make prediction...
 
 
