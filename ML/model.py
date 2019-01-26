@@ -58,12 +58,8 @@ def timeseries_to_supervised(data, lag=1):
     return df
 
 
-def parser(x):
-    return datetime.strptime('190'+x, '%Y-%m')
-
-
-series = read_csv(data, header=0,
-                  parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
+series = read_csv(path, header=0,
+                  parse_dates=[0], index_col=0, squeeze=True)
 # transform to supervised learning
 X = series.values
 supervised = timeseries_to_supervised(X, 1)
