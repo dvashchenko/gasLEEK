@@ -29,8 +29,6 @@ let chart1_2_options = {
           zeroLineColor: "transparent"
         },
         ticks: {
-          suggestedMin: 60,
-          suggestedMax: 125,
           padding: 20,
           fontColor: "#9a9a9a"
         }
@@ -68,18 +66,18 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "Nov 05, 2018",
+        "Nov 12, 2018",
+        "Nov 19, 2018",
+        "Nov 26, 2018",
+        "Dec 03, 2018",
+        "Dec 10, 2018",
+        "Dec 17, 2018",
+        "Dec 24, 2018",
+        "Dec 31, 2018",
+        "Jan 07, 2019",
+        "Jan 14, 2019",
+        "Jan 21, 2019"
       ],
       datasets: [
         {
@@ -97,7 +95,18 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100]
+          data: [3.716,
+            3.656,
+            3.599,
+            3.555,
+            3.473,
+            3.394,
+            3.345,
+            3.332,
+            3.296,
+            3.261,
+            3.237,
+            3.224]
         }
       ]
     };
@@ -113,18 +122,18 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "Jan 2018",
+        "Feb 2018",
+        "Mar 2018",
+        "Apr 2018",
+        "May 2018",
+        "Jun 2018",
+        "Jul 2018",
+        "Aug 2018",
+        "Sep 2018",
+        "Oct 2018",
+        "Nov 2018",
+        "Dec 2018"
       ],
       datasets: [
         {
@@ -142,7 +151,18 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120]
+          data: [3.269,
+            3.418,
+            3.476,
+            3.617,
+            3.69,
+            3.673,
+            3.605,
+            3.556,
+            3.588,
+            3.76,
+            3.632,
+            3.368]
         }
       ]
     };
@@ -158,18 +178,18 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018"
       ],
       datasets: [
         {
@@ -187,7 +207,18 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130]
+          data: [3.124,
+            3.561,
+            2.725,
+            3.138,
+            3.863,
+            4.081,
+            3.933,
+            3.794,
+            3.221,
+            2.782,
+            3.08,
+            3.551]
         }
       ]
     };
