@@ -25,14 +25,17 @@ values = data.values
 X = data['Date']  # input
 y = data['Price']  # output
 
+data.plot()
+plt.show()
+
 # print(X)
 # print(y)
 
 # split into train and test sets
-train_size = int(len(data) * 0.67)
-test_size = len(data) - train_size
-train, test = data[0:train_size,:], data[train_size:len(data),:]
-print(len(train), len(test))
+# train_size = int(len(data) * 0.67)
+# test_size = len(data) - train_size
+# train, test = data[0:train_size,:], data[train_size:len(data),:]
+# print(len(train), len(test))
 
 
 # model build
