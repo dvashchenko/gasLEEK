@@ -2,6 +2,9 @@
 
 <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/l/vue.svg" alt="License"></a>
 
+![alt text](client\src\assets\img\gasLEEK.png "gasLEEK")
+
+
 ---
 
 ## gas LinEar rEgression Kode
