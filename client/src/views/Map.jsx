@@ -14,7 +14,7 @@ import TagmapLayer from './tagmap-layer';
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiYWRhcmlhbiIsImEiOiJjanJjdzlqdTYwOGc3NDlxcXU3M291cmx1In0.fceqY9ssXVrQxPh0ZJFXRw';
 
 // sample data
-const DATA_URL = 'https://rivulet-zhang.github.io/dataRepo/tagmap/hashtags10k.json';
+const DATA_URL = 'https://raw.githubusercontent.com/plebeiathon/gasLEEK/master/client/src/variables/locations.json';
 // mapbox style file path
 const MAPBOX_STYLE =
   'https://rivulet-zhang.github.io/dataRepo/mapbox/style/map-style-dark-v9-no-labels.json';
@@ -30,103 +30,7 @@ export const INITIAL_VIEW_STATE = {
   bearing: 0
 };
 
-const stopPropagation = evt => evt.stopPropagation();
-
 class Map extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      x: 0,
-      y: 0,
-      hoveredItems: null,
-      expanded: false
-    };
-    this._onHover = this._onHover.bind(this);
-    this._onClick = this._onClick.bind(this);
-    this._closePopup = this._closePopup.bind(this);
-    this._renderhoveredItems = this._renderhoveredItems.bind(this);
-  }
-
-  _onHover(info) {
-    if (this.state.expanded) {
-      return;
-    }
-
-    const {x, y, object} = info;
-    const z = info.layer.state.z;
-    const {showCluster = true} = this.props;
-
-    let hoveredItems = null;
-
-    if (object) {
-      if (showCluster) {
-        hoveredItems = object.zoomLevels[z].points.sort((m1, m2) => m1.year - m2.year);
-      } else {
-        hoveredItems = [object];
-      }
-    }
-
-    this.setState({x, y, hoveredItems, expanded: false});
-  }
-
-  _onClick() {
-    this.setState({expanded: true});
-  }
-
-  _onPopupLoad(ref) {
-    if (ref) {
-      // React events are triggered after native events
-      ref.addEventListener('wheel', stopPropagation);
-    }
-  }
-
-  _closePopup() {
-    this.setState({expanded: false, hoveredItems: null});
-  }
-
-  _renderhoveredItems() {
-    const {x, y, hoveredItems, expanded} = this.state;
-
-    if (!hoveredItems) {
-      return null;
-    }
-
-    if (expanded) {
-      return (
-        <div
-          className="tooltip interactive"
-          ref={this._onPopupLoad}
-          style={{left: x, top: y}}
-          onMouseLeave={this._closePopup}
-        >
-          {hoveredItems.map(({name, year, mass, class: meteorClass}) => {
-            return (
-              <div key={name}>
-                <h5>{name}</h5>
-                <div>Year: {year || 'unknown'}</div>
-                <div>Class: {meteorClass}</div>
-                <div>Mass: {mass}g</div>
-              </div>
-            );
-          })}
-        </div>
-      );
-    }
-
-    return (
-      <div className="tooltip" style={{left: x, top: y}}>
-        {hoveredItems.slice(0, 20).map(({name, year}) => (
-          <div key={name}>
-            <h5>
-              {name} {year ? `(${year})` : ''}
-            </h5>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
   _renderLayers() {
     const {data = DATA_URL, cluster = true, fontSize = 32} = this.props;
 
@@ -137,8 +41,8 @@ class Map extends React.Component {
             data,
             getLabel: x => x.label,
             getPosition: x => x.coordinates,
-            minFontSize: 14,
-            maxFontSize: fontSize * 2 - 14
+            minFontSize: 22,
+            maxFontSize: fontSize * 2 - 18
           })
         : new TextLayer({
             id: 'twitter-topics-raw',
@@ -146,7 +50,7 @@ class Map extends React.Component {
             getText: d => d.label,
             getPosition: x => x.coordinates,
             getColor: d => DEFAULT_COLOR,
-            getSize: d => 20,
+            getSize: d => 22,
             sizeScale: fontSize / 20
           })
     ];
