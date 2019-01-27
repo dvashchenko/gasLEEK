@@ -34,6 +34,8 @@ let chart1_2_options = {
           zeroLineColor: "transparent"
         },
         ticks: {
+          suggestedMin: 3.1,
+          suggestedMax: 3.7,
           padding: 20,
           fontColor: "#9a9a9a",
           callback: function(label, index, labels) {
@@ -89,7 +91,7 @@ let chartExample1 = {
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Weekly Costs",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -145,7 +147,7 @@ let chartExample1 = {
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Monthly Costs",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -201,7 +203,7 @@ let chartExample1 = {
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Yearly Costs",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -251,7 +253,7 @@ let chartExample2 = {
       labels: ["Jan 28, 2019", "Feb 4, 2019", "Feb 11, 2019", "Feb 18, 2019", "Feb 25, 2019", "Mar 4, 2019"],
       datasets: [
         {
-          label: "Data",
+          label: "Projected Cost (via persistence forecasting)",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -296,7 +298,7 @@ let chartExample3 = {
       labels: ["0%", "2.5%", "5%", "7.5%", "10%"],
       datasets: [
         {
-          label: "Countries",
+          label: "Cost (via average volatility of data set)",
           fill: true,
           backgroundColor: gradientStroke,
           hoverBackgroundColor: gradientStroke,
@@ -385,7 +387,7 @@ const chartExample4 = {
       labels: ["Jan 28, 2019", "Feb 4, 2019", "Feb 11, 2019", "Feb 18, 2019", "Feb 25, 2019", "Mar 4, 2019"],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Savings (via [delta cost * tank size])",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#00d6b4",
