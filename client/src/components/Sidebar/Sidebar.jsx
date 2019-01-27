@@ -10,6 +10,8 @@ import PerfectScrollbar from "perfect-scrollbar";
 // reactstrap components
 import { Nav } from "reactstrap";
 
+import gasLEEK_logo from '../../assets/img/gasLEEK.png';
+
 var ps;
 
 class Sidebar extends React.Component {
@@ -121,6 +123,7 @@ class Sidebar extends React.Component {
               );
             })}
           </Nav>
+          <img src={gasLEEK_logo} alt='gasLEEK' className="gasLEEK"/>
         </div>
       </div>
     );

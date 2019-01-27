@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
+import { Card, CardBody, Row, Col } from "reactstrap";
 
 // Mapbox
 import DeckGL, {TextLayer} from 'deck.gl';
@@ -65,7 +65,6 @@ class Map extends React.Component {
           <Row>
             <Col md="12">
               <Card className="card-plain">
-                <CardHeader>Mapbox</CardHeader>
                 <CardBody>
                   <div
                     id="map"

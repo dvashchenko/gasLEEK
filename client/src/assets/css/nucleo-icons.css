@@ -6,6 +6,18 @@ Created using IcoMoon - icomoon.io
 
 -------------------------------- */
 
+code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+.gasLEEK {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  margin: 5% 10%;
+}
+
 @font-face {
   font-family: 'Nucleo';
   src: url('../fonts/nucleo.eot');

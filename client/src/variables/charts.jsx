@@ -16,7 +16,12 @@ let chart1_2_options = {
     xPadding: 12,
     mode: "nearest",
     intersect: 0,
-    position: "nearest"
+    position: "nearest",
+    callbacks: {
+      label: function(tooltipItem, data) {
+        return "$" + tooltipItem.yLabel.toString();
+      }
+  }
   },
   responsive: true,
   scales: {
@@ -30,7 +35,10 @@ let chart1_2_options = {
         },
         ticks: {
           padding: 20,
-          fontColor: "#9a9a9a"
+          fontColor: "#9a9a9a",
+          callback: function(label, index, labels) {
+            return '$' + label;
+          }
         }
       }
     ],
@@ -314,7 +322,14 @@ let chartExample3 = {
       xPadding: 12,
       mode: "nearest",
       intersect: 0,
-      position: "nearest"
+      position: "nearest",
+      callbacks: {
+        label: function(tooltipItem, data) {
+            return "$" + Number(tooltipItem.yLabel).toFixed(0).replace(/./g, function(c, i, a) {
+                return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
+            });
+        }
+    }
     },
     responsive: true,
     scales: {
@@ -329,7 +344,10 @@ let chartExample3 = {
             suggestedMin: 60,
             suggestedMax: 120,
             padding: 20,
-            fontColor: "#9e9e9e"
+            fontColor: "#9e9e9e",
+            callback: function(label, index, labels) {
+              return '$' + label.toLocaleString();
+            }
           }
         }
       ],
@@ -405,7 +423,12 @@ const chartExample4 = {
       xPadding: 12,
       mode: "nearest",
       intersect: 0,
-      position: "nearest"
+      position: "nearest",
+      callbacks: {
+        label: function(tooltipItem, data) {
+            return "$" + tooltipItem.yLabel.toString();
+        }
+    }
     },
     responsive: true,
     scales: {
@@ -421,7 +444,10 @@ const chartExample4 = {
             suggestedMin: 0,
             suggestedMax: 40,
             padding: 20,
-            fontColor: "#9e9e9e"
+            fontColor: "#9e9e9e",
+            callback: function(label, index, labels) {
+              return '$' + label;
+            }
           }
         }
       ],

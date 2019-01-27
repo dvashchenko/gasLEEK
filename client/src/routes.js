@@ -1,5 +1,6 @@
 import Dashboard from "./views/Dashboard.jsx";
 import Map from "./views/Map.jsx";
+import ML from "./views/ML";
 
 var routes = [
   {
@@ -14,6 +15,13 @@ var routes = [
     name: "Map",
     icon: "tim-icons icon-pin",
     component: Map,
+    layout: "/gasLEEK"
+  },
+  {
+    path: "/ml",
+    name: "ML",
+    icon: "tim-icons icon-pin",
+    component: ML,
     layout: "/gasLEEK"
   }
 ];
