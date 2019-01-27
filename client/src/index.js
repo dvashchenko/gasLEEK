@@ -15,7 +15,7 @@ const hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/gasLEEK" render={props => <AdminLayout {...props} />} />
+      <Route path="/" render={props => <AdminLayout {...props} />} />
       <Redirect from="/" to="/gasLEEK/dashboard" />
     </Switch>
   </Router>,

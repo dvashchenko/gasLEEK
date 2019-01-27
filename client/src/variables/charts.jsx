@@ -34,8 +34,8 @@ let chart1_2_options = {
           zeroLineColor: "transparent"
         },
         ticks: {
-          suggestedMin: 3.1,
-          suggestedMax: 3.7,
+          suggestedMin: 3.0,
+          suggestedMax: 3.3,
           padding: 20,
           fontColor: "#9a9a9a",
           callback: function(label, index, labels) {
