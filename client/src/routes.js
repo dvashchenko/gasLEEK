@@ -13,14 +13,14 @@ var routes = [
   {
     path: "/map",
     name: "Map",
-    icon: "tim-icons icon-pin",
+    icon: "tim-icons icon-world",
     component: Map,
     layout: "/gasLEEK"
   },
   {
     path: "/ml",
     name: "ML",
-    icon: "tim-icons icon-pin",
+    icon: "tim-icons icon-calendar-60",
     component: ML,
     layout: "/gasLEEK"
   }
