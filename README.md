@@ -4,7 +4,7 @@
 
 ![alt text](https://github.com/plebeiathon/gasLEEK/blob/master/client/public/gasLEEK.png "gasLEEK")
 
-<a href="https://www.youtube.com/watch?v=ZND8aNH-K4E"</a>
+<a href="https://www.youtube.com/watch?v=ZND8aNH-K4E"></a>
 
 ---
 
